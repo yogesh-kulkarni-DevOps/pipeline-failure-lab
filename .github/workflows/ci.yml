@@ -9,8 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+  - name: Checkout Code
+    uses: actions/checkout@v4
 
-      - name: Run Script
-        run: echo "Pipeline is working"
+  - name: Start
+    run: echo "Starting"
+
+  - name: Break Pipeline
+    run: exit 1
