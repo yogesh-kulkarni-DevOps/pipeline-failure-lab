@@ -16,4 +16,4 @@ jobs:
         run: echo "Starting"
 
       - name: Break Pipeline
-        run: exit 1
+        run: echo "Fixed"
